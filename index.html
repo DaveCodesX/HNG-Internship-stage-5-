@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Awolaja Oluwatosin David Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Awolaja Oluwatosin David</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Awolaja Oluwatosin David</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Product Manager  ',
+						'Scrum Master  ',
+						'Project Manager   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Product Manager. Intern</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://hng.tech/internship" class="btn btn-primary py-3 px-4">HNG 11</a> 
+							<a href="https://docs.google.com/presentation/d/16ovGnncMDzReA1sh9b0yZzag796mqwFR/edit?usp=share_link&ouid=107139070925640508139&rtpof=true&sd=true" class="btn btn-white btn-outline-white py-3 px-4">My First Task</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/imgn.JPG" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Awolaja Oluwatosin David</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Product Manager</span></p>
+										<p><span class="title-s">Experience: </span> <span>1 Year 1 Month</span></p>
+										<p><span class="title-s">Address: </span> <span>Limerick, Ireland</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Agile and Scrum Methodologies</span> <span class="pull-right">65%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Strategic Thinking</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Leadership Skills</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Time Management</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Research skills</span> <span class="pull-right">78%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									
+									<span>Communication</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I am an ambitious Business with Computing student seeking opportunity in project management to build upon policy and planning knowledge. Keen problem-solver for reliable issue resolution and improvement support developed from program manager role with Galactico Fashion. Organized with excellent prioritization abilities for smooth project supervision. Beginner in Programme Management, skilled in developing and delivering innovative solutions tailored to key business objectives. Client-focused with excellent relationship-building skills for constructive negotiations and communications. Confident leader, enabling Programme success through multidisciplinary team coordination. Strong leadership senses and problem-solver dedicated to streamlining operations to decrease costs and promote organizational efficiency. Uses independent decision-making skills and sound judgment to positively impact company success.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Product Management &amp; Enterprise Resourse planner</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Growth and Marketing, Platform Management,  &amp; Data and Analytics</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Business</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English</span></li>
+									<li class="d-flex"><span>Tools:</span> <span>Agile, Scrum &amp; WaterFall</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>HR Managemet, HTML5, CSS, Git, Javascript, React.js ,ERP &amp; Emotional Intelligence</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Anime, Sleep</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="4">0</span> <span>+</span>
+									<span>&nbsp; HNG Task completed</span>
+								</p>
+								<p><a href="https://linkedin.com/in/awolaja-oluwatosin-david-083839244" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Organized with excellent prioritization abilities for smooth project supervision. Beginner in Programme Management, skilled in developing and delivering innovative solutions tailored to key business objectives.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">July 2024-Present</span>
+					<h2>Program Manager Intern</h2>
+					<span class="position">HNG 11</span>
+					<p class="mt-4">An intensive and immersive internship program designed to equip participants with practical skills in software development, design, and project management. HNG 11 Internship offers a collaborative learning environment, connecting interns with industry experts and real-world projects. 
+						<ul>
+							<li>Management skills developed through responsibility for management of project budgets and excellent attention to detail developed through monitoring programme expenses against delivered and realized programme benefits.</li>
+							<li>Negotiation skills developed through renegotiating contracts with existing vendors for improved costs and timely results.</li>
+							<li>Teamwork and collaboration skills greatly enhanced whilst working as part of both small and larger teams on projects.</li>
+						</ul>
+					</p>
+				</div>
+
+			</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Jan 2021-Jul 2023</span>
+						<h2>Customer Representative assistant</h2>
+						<span class="position">Stemeyo Nigeria limited  </span>
+						<p class="mt-4"> A dynamic company specializing in STEM education and technology solutions. Stemeyo Nigeria Limited is dedicated to empowering the next generation of innovators through hands-on learning experiences and advanced educational tools.
+							<ul>
+								<li>Provided exceptional customer service by promptly responding to inquiries via phone, email, and in-person communication channels.</li>
+								<li>Acted as the primary point of contact for customers, providing comprehensive assistance with product inquiries, order processing, billing questions, and technical support.</li>
+								<li>Assisted with the Maintenance accurate records of customer interactions and transactions using CRM software.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">March 2020-Sep 2020</span>
+						<h2>Program Manager</h2>
+						<span class="position">Galactico Fashion </span>
+						<p class="mt-4">A cutting-edge fashion brand known for its innovative designs and high-quality materials. Galatico Fashion blends contemporary trends with timeless elegance, offering a diverse range of clothing and accessories for the modern consumer. 
+							<ul>
+								<li>Management skills developed through responsibility for management of project budgets and excellent attention to detail developed through monitoring programme expenses against delivered and realized programme benefits.</li>
+								<li>Negotiation skills developed through renegotiating contracts with existing vendors for improved costs and timely results.</li>
+								<li>Teamwork and collaboration skills greatly enhanced whilst working as part of both small and larger teams on projects.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Sep 2018-Aug 2019</span>
+						<h2>Front-End Designer Intern</h2>
+						<span class="position">Saed Technologies </span>
+						<p class="mt-4">A forward-thinking tech company focused on developing state-of-the-art software and hardware solutions. Saed Technologies aims to drive digital transformation across various industries by providing innovative and reliable technology products. 
+							<ul>
+								<li>Evaluated project specifications for technical feasibility, security risks and user experience concerns.</li>
+								<li>Improved web development plans to achieve client requirements within assigned timeframes.</li>
+								<li>Developed a target driven personality</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				
+
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">September 2023- Present</span>
+    					<h2>Bachelor of Business with Computing</h2>
+    					<span class="position">Technological University of the Shannon, limerick, Ireland</span>
+    					<p class="mt-4">Predicted Grade: 2.1</p>
+    				</div>
+    			</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">June 2023</span>
+    					<h2>Agile Project Management</h2>
+    					<span class="position">Alison Certification</span>
+    					<p class="mt-4">Grade: Distiction </p>
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">May 2023</span>
+    					<h2>Scum Master Training  </h2>
+    					<span class="position">Alison Certification</span>
+    					<p class="mt-4">Grade: Distiction </p>
+    				</div>
+				</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">August 2019</span>
+    					<h2>Aptech computer education performance statement: Semester 1-4
+							Certificate in Software engineering</h2>
+    					<span class="position">Aptech Computer Education Centre, Maryland, Ikeja, Lagos</span>
+    					<p class="mt-4">Grade: Merit </p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://docs.google.com/document/d/15ma1Glzz6vhOF51-UmZGXHL-AEoNlrGN/edit?usp=share_link&ouid=107139070925640508139&rtpof=true&sd=true" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are My current progress/ task from HNG 11 .</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://docs.google.com/document/d/1WlhvK13R2ipb2ABKrDsxDpe0OWN5EP9K/edit?usp=share_link&ouid=107139070925640508139&rtpof=true&sd=true" class="block-20 zoom-effect" style="background-image: url('images/imgm.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://docs.google.com/document/d/1WlhvK13R2ipb2ABKrDsxDpe0OWN5EP9K/edit?usp=share_link&ouid=107139070925640508139&rtpof=true&sd=true">HNG Task 1 - Market Intelligence Report & Business Model </a></h3>
+                <p>Picked a product from a list and developed a market intelligence report containing a business model.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://docs.google.com/document/d/18lbLIcPELgKNY1_b_5KkjndsgIK_XQXg/edit?usp=share_link&ouid=107139070925640508139&rtpof=true&sd=true" class="block-20 zoom-effect" style="background-image: url('images/imgm2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://docs.google.com/document/d/18lbLIcPELgKNY1_b_5KkjndsgIK_XQXg/edit?usp=share_link&ouid=107139070925640508139&rtpof=true&sd=true">HNG Task 2 - Product Requirement Documentation </a></h3>
+                <p> Created a PRD for the product that was  worked on in Task 1</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://docs.google.com/spreadsheets/d/1tchdFk6BbD8VQqefMKK3QChveeHvRiu8Ii9mQ0ZFLLg/edit?usp=sharing" class="block-20 zoom-effect" style="background-image: url('images/imgm3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://docs.google.com/spreadsheets/d/1tchdFk6BbD8VQqefMKK3QChveeHvRiu8Ii9mQ0ZFLLg/edit?usp=sharing">HNG Task 4 - Creating Tickets for MVP Of Their Products</a></h3>
+                <p>Using the previously developed PRD and FRD from the previous side task User Stories and Master PRD create actionable and clear-cut tickets for the MVP of your individual product. <br> I specifically worked on ticket CUU_001 &amp; CUU_002 for the contact us page section</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="4">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="4">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="200">0</strong>
+                <span>Cups of coffee a week</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>Wanna know more about me? Message me on<span> Whatsapp  </span> </h2>
+						<div class="heading"> <h4> I love to solve business &amp; Analytical problems  </h4>
+						<br>
+						<p><a href="https://wa.link/6yd9m5" class="btn btn-primary py-3 px-5">Whatsapp</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Limerick, Ireland</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+353834505108</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:davecodes18@gmail.com">davecodes18@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Veiw Resume</h3>
+	            <p><a href="https://docs.google.com/document/d/15ma1Glzz6vhOF51-UmZGXHL-AEoNlrGN/edit?usp=share_link&ouid=107139070925640508139&rtpof=true&sd=true">View Resume</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://wa.link/6yd9m5" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="http://linkedin.com/in/awolaja-oluwatosin-david-083839244"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://www.snapchat.com/add/davecodes2020?share_id=mXJuY6CmSPm2YtjbOYtSTg&locale=en_US@rg=iezzzz"><span class="icon-snapchat"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100012994050110"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/daves_codes?igsh=MW05bXhhenRjODM5Zg%3D%3D&utm_source=qr"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  <i class="icon-heart color-danger" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
